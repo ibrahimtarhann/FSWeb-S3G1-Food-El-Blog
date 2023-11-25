@@ -1,10 +1,15 @@
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
 
+* {
+  color: #3c373b;
+}
+
 h1 {
-  font-family: "Gaegu", cursive;
+  font-family: "Josefin Sans", sans-serif;
   margin: 20px 0;
+  text-align: center;
   /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
-  font-size: 10px;
+  font-size: 60px;
 }
 
 h2,
