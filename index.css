@@ -5,11 +5,12 @@
 }
 
 h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif; /*google fonttan eklendi */
   margin: 20px 0;
-  text-align: center;
+  text-align: center; /*Başlığı ortalıyoruz burda */
   /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
   font-size: 60px;
+  color: green;
 }
 
 h2,
@@ -17,11 +18,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Gaegu", cursive;
+  font-family: "Josefin Sans", sans-serif;
   margin-bottom: 0;
   padding: 0 10px;
   /*=======  Font size'ı 30px yapın*/
-  font-size: 10px;
+  font-size: 30px;
 }
 
 /*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
@@ -29,18 +30,47 @@ h6 {
 font-size: 16px;
 font-family: roboto;
 padding: 10px;
-line-height: 1.4;
+line-height: 1.4;*/
 
-*/
+p {
+  font-size: 16px; /* yazı boyutu */
+  font-family: roboto; /* Yazi stili*/
+  padding: 10px;
+  line-height: 1.4; /* Yazı paragrafları arasındaki boşluğu gösterir */
+}
 
 /*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
 
-  border-radius: 10px;
+  border-radius: 10px;*/
 
-*/
+img {
+  border-radius: 10px; /*Böylece tüm img'lerin köşeleri kıvrıldı */
+}
 
+.banner {
+  width: 750px;
+}
+
+.yemek {
+  width: 300px;
+  height: 250px;
+}
+
+.aperatif {
+  width: 250px;
+  height: 300px;
+}
+
+.tatlilar {
+  width: 300px;
+}
+
+.iletisim {
+  line-height: 1.8;
+}
 .content-row {
-  display: flex;
+  /* Resim,başlık ve yazıyı yan yana koymak için kullanıyoruz.*/
+  display: flex; /*Elemanları yan yana koyarken kullandığımız bir CSS özelliğidir. */
 }
 
 .content-row div {
@@ -50,17 +80,27 @@ line-height: 1.4;
 .container {
   /*======= width property yaratın. Değerini 750px olarak atayın */
   margin: 0 auto;
+  width: 750px; /*Sayfayı 750px'e sığdırır böylece yazılar ortalanır */
 }
 
 .container header nav a {
-  margin: 0 10px;
-  border: 1px solid lightgray;
-  padding: 20px;
+  margin: 10px; /* Sağındaki ve olundaki elemanla araındaki boşluk*/
+
+  border: 1px solid lightgray; /*Kutunun kenarlıkları */
+
+  padding: 20px; /*kutunun içindeki içerikle kutunun kenarında kalan alanlar */
+
   display: inline-block;
-  border-radius: 20px;
+
+  border-radius: 20px; /*kenarların-köşelerin yuvarlaklığı */
+
   color: white;
-  text-decoration: none;
+
+  text-decoration: none; /*link kelimelerinin altındaki çizgi olmasın */
+
   margin-bottom: 20px;
+
+  background: #e79947;
   /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
 }
 
